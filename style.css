@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+.container {
+  min-width: 360px;
+  max-width: 1000px;
+  margin: 20px 5px;
+  border: 5px solid black;
+  border-bottom: none;
+  border-radius: 15px;
+}
+.nav-container {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+.nav-container > ul {
+  display: none;
+}
+.a-signup {
+  background: green;
+  color: white;
+  padding: 5px 10px;
+}
+.a-login {
+  border: 1px solid green;
+  color: green;
+  padding: 5px 10px;
+}
+
+img {
+  height: 20px;
+}
+.logo-png {
+  height: 30px;
+}
+.header {
+  min-width: 360px;
+  height: 300px;
+  background-image: url("images/image-2.jpg");
+  background-size: cover;
+}
+
+.header-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+  padding-top: 30px;
+  padding-left: 2em;
+  padding-right: 5em;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+h1 {
+  font-weight: 400;
+  text-align: left;
+  font-size: 2.125rem;
+}
+h1 > span {
+  color: #ece480;
+  font-weight: 600;
+}
+.header-p {
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+/* input within header but not spaced the same on the left so lots of custom css */
+
+.input-container {
+  margin-top: -50px;
+  margin-left: -5px;
+  text-align: left;
+}
+.text-input {
+  padding: 0.5em 8.2em 0.5em 2.5em;
+  border: none;
+  font-family: "Inter", sans-serif;
+  margin-right: 0;
+  border-radius: 6px;
+  width: 88%;
+}
+
+.input-icon {
+  position: relative;
+  left: 33px;
+  top: 6px;
+  opacity: 0.4;
+}
+
+.input-btn {
+  padding: 0.4em 0.72em;
+  margin-left: -78px;
+  border: none;
+  background: #638a5c;
+  border: 1px white solid;
+  color: white;
+  font-family: "Inter", sans-serif;
+  border-radius: 4px 4px 0 0;
+}
+
+.hikes-section {
+  width: 100%;
+}
+
+.hikes-section h3 {
+  width: 94%;
+  margin: 1em auto 0.5em;
+  text-align: left;
+  color: #565656;
+  font-size: 1.4rem;
+}
+.hike-container {
+  width: 100%;
+}
+.hike-img {
+  width: 94%;
+  height: 200px;
+  object-fit: cover;
+}
+.hike-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 88%;
+  margin: 1em auto;
+}
+.hike-details-container > * {
+  text-align: left;
+  margin: 0;
+}
+.hike-details-container > h6 {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-size: 0.875rem;
+}
+.hike-details-container > p {
+  font-size: 0.75rem;
+  line-height: 1.4em;
+  color: #6f6f6f;
+  margin-bottom: 1em;
+}
+.a-btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: white;
+  background-color: #638a5c;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+.get-involved-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  gap: 20px;
+}
+.get-involved-container {
+  margin: 10px auto;
+  width: 86%;
+}
+.get-involved-container > * {
+  margin: 0.375em auto;
+}
+.get-involved-container > h6 {
+  font-size: 1rem;
+}
+.get-involved-container > p {
+  font-size: 0.75rem;
+}
+.get-involved-container > img {
+  height: 30px;
+}
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+}
+ul {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+li {
+  display: inline;
+  margin: 1em;
+  font-size: 0.75rem;
+}
+
+.copyright-p {
+  margin-top: 0;
+  font-size: 0.5rem;
+  opacity: 0.8;
+}
+.explore-header {
+  height: 250px;
+}
+
+.explore-hike-container {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 0 auto 1rem;
+  padding: 0;
+}
+.explore-hike-container > h4,
+.explore-hike-container > p {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+.explore-hike-container > img {
+  height: 250px;
+  width: 100%;
+  margin: 0 auto 0.75em;
+}
+.star-img {
+  height: 14px;
+}
+.hike-desc {
+  color: #6f6f6f;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 780px) {
+  .container {
+    margin: 20px auto;
+  }
+  .nav-container > ul {
+    display: inline;
+  }
+  .nav-container > .menu-toggle {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .header {
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    background-image: url("images/image-2-wide.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .header-container {
+    width: 48%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    padding-top: 65px;
+  }
+  .header-container > h1 {
+    font-size: 2.25rem;
+  }
+  .input-container {
+    align-self: end;
+    margin-bottom: 30px;
+    width: 52%;
+  }
+  .text-input {
+    padding-right: 8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    min-width: 85%;
+    max-width: 90%;
+  }
+  .input-btn {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-weight: 600;
+    padding-right: 0.55em;
+  }
+  .one-more-container {
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .hike-container {
+    display: flex;
+    width: 94%;
+    height: 250px;
+    margin: auto;
+    gap: 10px;
+    margin-bottom: 1em;
+  }
+  .explore-hikes-container-of-containers {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .explore-hike-container > img {
+    max-width: 90%;
+    height: 100%;
+    grid-area: img;
+    padding-top: 10px;
+  }
+  .explore-hike-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 35px 35px 20px auto;
+    grid-template-areas:
+      "h4 h4 h4 img img"
+      "p1 p1 p1 img img"
+      ". . . img img"
+      "p2 p2 p2 p2 .";
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid gray;
+  }
+  .explore-hike-container:last-child {
+    border-bottom: none;
+  }
+  .explore-h4 {
+    grid-area: h4;
+  }
+  .explore-p1 {
+    grid-area: p1;
+  }
+  .explore-p2 {
+    grid-area: p2;
+    line-height: 1.4rem;
+    font-size: 14px;
+  }
+  .google-map-div {
+    width: 63%;
+    padding-top: 1.5em;
+  }
+  .map {
+    max-width: 96%;
+    min-width: 300px;
+    height: auto;
+  }
+
+  .hike-img {
+    width: 53%;
+    height: 100%;
+  }
+  .hike-details-container {
+    padding: 1.75em 2.5em 1.75em 2em;
+    text-align: center;
+  }
+  .hike-container:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .get-involved-section {
+    flex-direction: row;
+    padding: 1em;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 1em;
+    height: 100px;
+  }
+  footer > ul {
+    margin-left: auto;
+  }
+  footer > ul > li {
+    font-size: 0.66rem;
+  }
+}
