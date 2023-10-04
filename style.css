@@ -183,6 +183,9 @@ h1 > span {
 .get-involved-container > img {
   height: 30px;
 }
+.map {
+  display: none;
+}
 footer {
   background: black;
   color: white;
@@ -353,6 +356,7 @@ li {
     padding-top: 1.5em;
   }
   .map {
+    display: block;
     max-width: 96%;
     min-width: 300px;
     height: auto;
